@@ -10,9 +10,10 @@ class Transfer
   end  
   
   def valide?
-    self.valide == true 
-    if sender.valide == true || receiver.valide == true 
-    end
+   sender.balance > 0 && sender.status == "open"
+   receiver.balance > 0 && receiver.status == "open"
+   sender.valide?
+   receiver.valid?
   end 
     
    def execute_transaction
