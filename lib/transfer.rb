@@ -9,7 +9,7 @@ class Transfer
   @status = "pending"
   end  
   
-  def valide?
+  def valid?
    sender.balance > 0 && sender.status == "open"
    receiver.balance > 0 && receiver.status == "open"
    sender.valide?
