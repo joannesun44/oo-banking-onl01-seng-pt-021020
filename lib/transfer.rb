@@ -2,9 +2,11 @@ class Transfer
   
   attr_accessor :sender, :receiver, :status, :amount
   
-  def initialize(amount)
+  def initialize(amount,sender, receiver)
   @amount = amount
-  @status = "open"
+  @sender = sender
+  @receiver = receiver
+  @status = "pending"
   end  
   
   def valide?
