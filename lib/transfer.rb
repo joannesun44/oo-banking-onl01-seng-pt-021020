@@ -5,7 +5,15 @@ class Transfer
   def initialize(amount)
   @amount = amount
   @status = "pending"
-end 
+  end  
+  
+  def valide?
+    self.valide == true 
+    if sender.valide == true || receiver.valide == true 
+    end
+  end 
+    
+    
   
   
   
