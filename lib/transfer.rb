@@ -4,7 +4,7 @@ class Transfer
   
   def initialize(amount)
   @amount = amount
-  @status = "pending"
+  @status = "open"
   end  
   
   def valide?
